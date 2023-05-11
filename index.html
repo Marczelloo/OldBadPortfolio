@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Marczelloo's site | home</title>
+        <link rel="icon" type="image/x-icon" href="img/marczelloo_icon.png">
+        <meta name="description" content="Marczelloo's site home">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="sites/About/style/style.css">
+        <link rel="stylesheet" href="sites/Contact/style/style.css">
+        <link rel="stylesheet" href="sites/Portfolio/style/style.css">
+    </head>
+    <body>
+        <div class="back-to-top-container">
+            <div class ='back-to-top'>
+                <a href="#top">
+                    <img src="img/back-arrow.png">
+                </a>
+            </div>
+        </div>
+        
+
+        <nav class="nav-settings">
+            <div class="settings-item neon" state="on">
+                <img src="img/neon_on.png" alt="neons_on">
+            </div>
+            <div class="settings-item animation" state="on">
+                <img src="img/animation_on.png" alt="animation">
+            </div>
+            <div class="settings-item setting" state="off">
+                <img src="img/arrow-icon.png" alt="setting">
+            </div>
+        </nav>
+        <article class="home-container" id="top">
+            <section class="home-text">
+                <h1 class="neon-toggle">Marczelloo's site</h1>
+            </section>
+            <section class="home-menu">
+                <a href="#about"class="home-menu-item neon-toggle anim-toggle" >
+                    <h3> About me </h3>
+                    <img src="img/about_me.png" alt="about me">
+                </a>
+                <a href="#portfolio"class="home-menu-item neon-toggle anim-toggle" >
+                    <h3> Portfolio </h3>
+                    <img src="img/portfolio.png" alt="portfolio">
+                </a>
+                <a href="#contact" class="home-menu-item neon-toggle anim-toggle">
+                    <h3> Contact </h3>
+                    <img src="img/mail.png" alt="contact">
+                </a>
+            </section>
+        </article>
+        <div class="neon-spacing"> </div>
+        <article class="about-container" id="about">
+            <section class="about-text">
+                <h1 class="neon-toggle">About me</h1>
+            </section>
+            <section class="about-text">
+                <p class="neon-toggle anim-toggle"> My name is Marcel I'm 17 years old and I live in Poland <br>
+                    I'm interested in programming and I want to become a programmer <br>
+                    I'm studying programming in trchnical school and I'm currently on 3rd year <br>
+                    I'm currently learning HTML, CSS, JavaScript, PHP, React.js, Java and C++</p>
+            </section>
+        </article>
+        <div class="neon-spacing"> </div>
+        <article class="introduction" id="portfolio">
+            <section class="introduction-text">
+                <h1 class="neon-toggle anim-toggle"> Portfolio</h1>
+                <p class="neon-toggle anim-toggle"> Here you can find projects that I made in my free time</p>
+            </section>
+        </article>
+        <article class="projects-container">
+            <section class="projects-left reveal-left neon-toggle anim-toggle">
+                <div class="projects-left-text">
+                    <h3>Calculator</h3>
+                    <p>Simple calculator made with JavaScript that can add, substract, multiply, divide and modulo</p>
+                    <a href="../Calculator/index.html"> Check it out > </a>
+                </div>
+                <div class="projects-left-image">
+                    <div class="carousel">
+                        <button class="carousel-button carousel-left-btn is-hidden" id="carousel-a"> < </button>
+                            <div class="carousel-track-container">
+                                <ul class="carousel-track" id="carousel-a">
+                                    <li class="carousel-slide current-slide">
+                                        <img class="carousel-img" src="img/projekt1_1.png" alt="calculator">
+                                    </li>
+                                    <li class="carousel-slide">
+                                        <img class="carousel-img" src="img/projekt1_2.png" alt="calculator">
+                                    </li>
+                                    <li class="carousel-slide">
+                                        <img class="carousel-img" src="img/projekt1_3.png" alt="calculator">
+                                    </li>
+                                </ul>
+                            </div>
+                        <button class="carousel-button carousel-right-btn" id="carousel-a"> > </button>
+                        <div class="carousel-map" id="carousel-a">
+                            <button class="carousel-map-button current-slide"></button>
+                            <button class="carousel-map-button"></button>
+                            <button class="carousel-map-button"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="projects-right reveal-right neon-toggle anim-toggle">
+                <div class="projects-right-image">
+                    <div class="carousel">
+                        <button class="carousel-button carousel-left-btn is-hidden"id="carousel-b"> < </button>
+                            <div class="carousel-track-container">
+                                <ul class="carousel-track" id="carousel-b">
+                                    <li class="carousel-slide current-slide">
+                                        <img class="carousel-img" src="img/projekt1_1.png" alt="calculator">
+                                    </li>
+                                    <li class="carousel-slide">
+                                        <img class="carousel-img" src="img/projekt1_2.png" alt="calculator">
+                                    </li>
+                                    <li class="carousel-slide">
+                                        <img class="carousel-img" src="img/projekt1_3.png" alt="calculator">
+                                    </li>
+                                </ul>
+                            </div>
+                        <button class="carousel-button carousel-right-btn" id="carousel-b"> > </button>
+                        <div class="carousel-map" id="carousel-b">
+                            <button class="carousel-map-button current-slide"></button>
+                            <button class="carousel-map-button"></button>
+                            <button class="carousel-map-button"></button>
+                        </div>
+                    </div>
+                </div>   
+                <div class="projects-right-text">
+                    <h3>Project 2</h3>
+                    <p>Project 2 description</p>
+                    <a href="sites/site1.html"> < Check it out</a>
+                </div> 
+            </section>
+        </article>
+        <div class="neon-spacing"> </div>
+        <article class="contact-container" id="contact">
+            <section class="contact-text">
+                <h1 class="neon-toggle"> Contact </h1>
+            </section> 
+        </article>  
+        <article class="contact-item-row">
+                <div class="contact-item neon-toggle anim-toggle">
+                    <h2> Discord </h2>
+                    <img src="sites/Contact/img/discord-icon.png" alt="discord-icon">
+                    <p> Marczelloo#5733 </p>
+                </div>
+                <div class="contact-item neon-toggle anim-toggle">
+                    <h2> E-mail </h2>
+                    <img src="sites/Contact/img/mail.png" alt="mail-icon">
+                    <p> marczelloo.contact@gmail.com </p>
+                </div>
+        </article>
+
+        <script src="script/script.js"></script>
+        <script src="sites/Portfolio/script/script.js"></script>
+    </body>
+</html>

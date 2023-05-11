@@ -1,0 +1,111 @@
+:root{
+    --white: rgb(227, 230, 255);
+    --white-calc: rgba(227, 230, 255, 0.9);
+    --white-calc-hover: rgba(227, 230, 255, 1);
+    --grey-calc: rgba(138, 132, 167, 0.9);
+    --grey-calc-hover: rgba(138, 132, 167, 1);
+    --black-calc: rgba(62, 59, 77, 0.9);
+    --black-calc-hover: rgb(68, 64, 83);
+    --orange-calc: rgb(255, 98, 36, 0.9);
+    --orange-calc-hover: rgb(255, 98, 36, 1);
+}
+body{
+    background-color: var(--white);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.return{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+.return:hover{
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.10);
+}
+.return > a{
+    text-decoration: none;
+    color: var(--black);
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container > h1{
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+.calc{
+    background-color: rgb(26, 26, 26);
+    color: var(--white);
+    height: auto;
+    width: 400px;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7),
+    0 0 15px rgba(0, 0, 0, 0.5);
+}
+.screen{
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    background-color: rgba(184, 184, 184, 0.281);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    text-align:right;
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+.calc-buttons-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0  0.5rem;
+}
+.calc-buttons-row:first-child > .calc-button:nth-child(-n+3){
+    background-color: var(--grey-calc);
+}
+.calc-buttons-row:first-child > .calc-button:nth-child(-n+3):hover{
+    background-color: var(--grey-calc-hover);
+}
+.calc-button{
+    backdrop-filter: (5.5px);
+    -webkit-backdrop-filter: blur(5.5px);   
+    background-color: var(--black-calc);
+    color: var(--white);
+    border: 1px solid rgba(26, 26, 26, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(26, 26, 26, 0.1);
+    flex-basis: 20%;
+    font-size: 34px;
+    width: 25%;
+    height: 2.5em;   
+}
+.calc-button:hover{
+    background-color: var(--black-calc-hover);
+}
+.calc-button:active{
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.562) inset;
+}
+.calc-button:last-child{
+    background-color: var(--orange-calc) ;
+}
+.calc-button:last-child:hover{
+    background-color: var(--orange-calc-hover);
+}
